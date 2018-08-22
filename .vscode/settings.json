@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "tslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "npm.enableScriptExplorer": true,
+  "npm.scriptExplorerAction": "run",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2
+}

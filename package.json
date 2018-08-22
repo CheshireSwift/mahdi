@@ -1,0 +1,58 @@
+{
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.0.0-beta.106",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-typescript": "2.0.0-beta.8",
+    "konva": "^2.2.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-konva": "^1.7.14",
+    "typescript": "^3.0.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "concurrently -c cyan,magenta 'npm:watch-*'",
+    "watch-site": "gatsby develop",
+    "watch-types": "nodemon -w public -x npm run graphql-types",
+    "graphql-types": "gql-gen --schema http://localhost:8000/___graphql --template typescript --out ./src/graphql-types.d.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-rc.2",
+    "@types/enzyme": "^3.1.13",
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.11",
+    "@types/react-helmet": "^5.0.7",
+    "concurrently": "^3.6.1",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "graphql-code-generator": "^0.11.0",
+    "graphql-codegen-typescript-template": "^0.11.0",
+    "graphql-compiler": "^1.6.2",
+    "jest": "^23.5.0",
+    "jest-enzyme-selector-matchers": "^2.0.2",
+    "nodemon": "^1.18.3",
+    "prettier": "^1.14.2",
+    "relay-compiler-language-typescript": "^1.0.1",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CheshireSwift/mahdi"
+  }
+}
